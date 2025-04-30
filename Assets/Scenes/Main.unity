@@ -2519,6 +2519,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &450872312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+  m_PrefabInstance: {fileID: 1865955343}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &450872316
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450872312}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.37850046
+  m_Height: 1.9617386
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.8128483, z: 0.26422453}
 --- !u!1 &454891985
 GameObject:
   m_ObjectHideFlags: 0
@@ -6594,6 +6622,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionCanvas: {fileID: 401951151}
+--- !u!1001 &1865955343
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.355032
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.117
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_Name
+      value: Ch33_nonPBR@Booty Hip Hop Dance
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bd843dd81013cf241ac2de46a4684122, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 450872316}
+  m_SourcePrefab: {fileID: 100100000, guid: c9a15701bfa0a5a4c959f3de0869409f, type: 3}
 --- !u!1 &1875641684
 GameObject:
   m_ObjectHideFlags: 0
@@ -8952,3 +9044,4 @@ SceneRoots:
   - {fileID: 2065362754}
   - {fileID: 1875641690}
   - {fileID: 1990519027}
+  - {fileID: 1865955343}
