@@ -1,0 +1,1 @@
+public enum GameState { StartMenu, Playing, Loading, Paused, Interacting }
