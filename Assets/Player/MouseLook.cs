@@ -14,7 +14,7 @@ public class MouseLook : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(Vector3.up, mouseX *Time.deltaTime);
+        transform.Rotate(Vector3.up, mouseX *Time.deltaTime);   //scaling with the time between frames for smooth motion
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -xClamp, xClamp);

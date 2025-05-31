@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerSpawner : MonoBehaviour
 {
-    public GameObject playerPrefab; // Drag your player prefab here in the Inspector
-    public string spawnPointTag = "SpawnPoint"; // The tag you assigned to your spawn point
+    public GameObject playerPrefab; //create a prefab of the player
+    public string spawnPointTag = "SpawnPoint";
 
     void Start()
     {
@@ -12,16 +12,16 @@ public class PlayerSpawner : MonoBehaviour
 
     void SpawnPlayer()
     {
-        // Find all GameObjects with the specified tag
+        //Find all GameObjects with the specified tag
         GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag(spawnPointTag);
 
-        // Check if any spawn points were found
+        //Check if any spawn points were found
         if (spawnPoints.Length > 0)
         {
-            // For simplicity, we'll just pick the first spawn point we find
+            //For simplicity, we just pick the first spawn point we find
             Transform spawnTransform = spawnPoints[0].transform;
 
-            // Instantiate the player prefab at the spawn point's position and rotation
+            //Instantiate the player prefab at the spawn point's position and rotation
             if (playerPrefab != null)
             {
                 Instantiate(playerPrefab, spawnTransform.position, spawnTransform.rotation);

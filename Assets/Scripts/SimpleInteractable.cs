@@ -10,7 +10,7 @@ public class SimpleInteractable : MonoBehaviour
     private void Start()
     {
         
-        // Ensure the canvas starts hidden
+        //Ensure the canvas starts hidden
         if (interactionCanvas != null)
         {
             interactionCanvas.gameObject.SetActive(false);
@@ -21,7 +21,7 @@ public class SimpleInteractable : MonoBehaviour
         }
 
         
-        // Get the InputManager component once at the start
+        //Get the InputManager component once at the start
         if (playerObject != null)
         {
             playerMovement = playerObject.GetComponent<InputManager>();
@@ -88,6 +88,7 @@ public class SimpleInteractable : MonoBehaviour
         }
     }
 
+    //making the desciption publicly available for other scripts to use
     public string GetDescription()
     {
         return description;

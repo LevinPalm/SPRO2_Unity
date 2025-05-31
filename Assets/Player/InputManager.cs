@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using UnityEngine;
 
 public class InputManager : MonoBehaviour
@@ -15,11 +14,10 @@ public class InputManager : MonoBehaviour
     Vector2 horizontalInput;
     Vector2 mouseInput;
 
-    public bool canMove = true;
+    public bool canMove = true; //for toggling the visibility of the interaction canvas
 
     private void Awake()
     {
-        //canMove = true;
         controls = new PlayerControls();
         groundMovement = controls.GroundMovement;
 
@@ -40,10 +38,7 @@ public class InputManager : MonoBehaviour
         {
             movement.ReceiveInput(horizontalInput);
             mouseLook.ReceiveInput(mouseInput);   
-        }
-        //movement.ReceiveInput(horizontalInput);
-        //mouseLook.ReceiveInput(mouseInput);      
-
+        } 
     }
 
     private void OnEnable()

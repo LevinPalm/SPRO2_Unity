@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -13,7 +12,7 @@ public class Movement : MonoBehaviour
     [SerializeField] float jumpHeight = 3.5f;
     bool jump = false;
 
-    [SerializeField] float gravity = -30f;   //-9.81
+    [SerializeField] float gravity = -30f;   //-9.81 feels to small
     Vector3 verticalVelocity = Vector3.zero;
     [SerializeField] LayerMask groundMask;
     bool isGrounded;
@@ -27,8 +26,9 @@ public class Movement : MonoBehaviour
         }
 
         Vector3 horizontalVelocity = (transform.right * horizontalInput.x + transform.forward * horizontalInput.y) * speed ;
-        controller.Move(horizontalVelocity * Time.deltaTime);
+        controller.Move(horizontalVelocity * Time.deltaTime);   //scaling with time between frames to make the motion smooth
 
+        //jumping is not cmopletly integrated yet, for later use
         if (jump)
         {
             if (isGrounded)
@@ -47,6 +47,7 @@ public class Movement : MonoBehaviour
         horizontalInput = _horizontalInput;
     }
 
+    //not completly implemented but for future use
     public void OnJumpPressed()
     {
         jump = true;

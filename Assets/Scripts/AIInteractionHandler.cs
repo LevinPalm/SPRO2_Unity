@@ -16,7 +16,7 @@ public class GeminiInteractionHandler : MonoBehaviour
     public Button exitButton;
 
     [Header("Gemini Settings")]
-    [TextArea(4, 10)] public string personalityPrompt = "You are a helpful assistant.";
+    [TextArea(4, 10)] public string personalityPrompt = "You are a helpful assistant."; //will be replaced by vendor specific prompts
     public string apiKey = "AIzaSyBMs0nspb_4aT7f9l5xfi_S7bID6q90qbM";
 
     private HttpClient httpClient;
@@ -39,7 +39,7 @@ public class GeminiInteractionHandler : MonoBehaviour
     private async void OnSubmit()
     {
         string playerInput = inputField.text;
-        if (string.IsNullOrWhiteSpace(playerInput))
+        if (string.IsNullOrWhiteSpace(playerInput)) //check for valid input
             return;
 
         outputText.text = "Thinking...";
@@ -90,7 +90,7 @@ public class GeminiInteractionHandler : MonoBehaviour
     {
         if (interactable != null)
         {
-            interactable.ExitInteract();
+            interactable.ExitInteract();    //calling the exit function of the script attached to the vendor object
         }
     }
 }
