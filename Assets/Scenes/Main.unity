@@ -726,7 +726,7 @@ MonoBehaviour:
     https://www.hth.de/kueche/kuechenmodelle/. Please get your information from their
     and recommend based on the products listed their.\nMake your answer concice and
     not longer than 10 sentences long."
-  apiKey: AIzaSyBMs0nspb_4aT7f9l5xfi_S7bID6q90qbM
+  apiKey: api key
 --- !u!1 &98215952
 GameObject:
   m_ObjectHideFlags: 0
@@ -7078,7 +7078,7 @@ MonoBehaviour:
     and will speak in English and you are representing your company, You are trying
     your best to sell some furniture the the visitor. \r\n\r\n\r\nMake your answer
     concice and not longer than 10 sentences long."
-  apiKey: AIzaSyBMs0nspb_4aT7f9l5xfi_S7bID6q90qbM
+  apiKey: api key
 --- !u!1 &2047625986
 GameObject:
   m_ObjectHideFlags: 0
@@ -7558,7 +7558,7 @@ MonoBehaviour:
     https://www.sauna-whirlpool.com/produktkategorie/whirlpool/. Please get your
     information from their and recommend based on the products listed their.\nMake
     your answer concice and not longer than 10 sentences long."
-  apiKey: AIzaSyBMs0nspb_4aT7f9l5xfi_S7bID6q90qbM
+  apiKey: api key
 --- !u!1 &2079930309
 GameObject:
   m_ObjectHideFlags: 0

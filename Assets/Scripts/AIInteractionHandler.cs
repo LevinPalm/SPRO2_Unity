@@ -17,7 +17,7 @@ public class GeminiInteractionHandler : MonoBehaviour
 
     [Header("Gemini Settings")]
     [TextArea(4, 10)] public string personalityPrompt = "You are a helpful assistant."; //will be replaced by vendor specific prompts
-    public string apiKey = "AIzaSyBMs0nspb_4aT7f9l5xfi_S7bID6q90qbM";
+    public string apiKey = "Gemini API key";
 
     private HttpClient httpClient;
     private SimpleInteractable interactable;
