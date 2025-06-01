@@ -17,12 +17,12 @@ public class GeminiInteractionHandler : MonoBehaviour
 
     [Header("Gemini Settings")]
     [TextArea(4, 10)] public string personalityPrompt = "You are a helpful assistant."; //will be replaced by vendor specific prompts
-    public string apiKey = "Gemini API key";
+    public string apiKey = "Gemini API key";    //replace with your api key
 
     private HttpClient httpClient;
     private SimpleInteractable interactable;
 
-    private const string GeminiApiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent?key=";
+    private const string GeminiApiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=";
 
     private void Start()
     {

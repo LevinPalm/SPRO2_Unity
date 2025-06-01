@@ -7074,11 +7074,11 @@ MonoBehaviour:
     z\xE4hlen zu unseren Spezialit\xE4ten. Hier finden Sie alles, was das Herz begehrt:
     Von gem\xFCtlichen Loungem\xF6beln \xFCber praktische Gartentische bis hin zu
     robusten Gartenb\xE4nken bieten wir Ihnen eine gro\xDFe Auswahl an M\xF6beln
-    f\xFCr Ihren Garten oder Balkon\"\r\n\r\n\r\nYour name is Hans, you are German
+    f\xFCr Ihren Garten oder Balkon.\r\n\r\n\r\nYour name is Hans, you are German
     and will speak in English and you are representing your company, You are trying
     your best to sell some furniture the the visitor. \r\n\r\n\r\nMake your answer
     concice and not longer than 10 sentences long."
-  apiKey: api key
+  apiKey: Gemini API key
 --- !u!1 &2047625986
 GameObject:
   m_ObjectHideFlags: 0
